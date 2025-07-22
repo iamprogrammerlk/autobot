@@ -240,6 +240,18 @@ empty_line
 demo_ui_message_box
 empty_line
 
+echo "Getting App settings from .conf file"
+# an associative array to hole returned data
+declare -A settings
+# Pass file path and array name to the get_config()
+# A new file will created if doesn't exist
+get_config "$APP_HOME/settings.conf" "settings"
+# Accessing the values
+echo "${settings["app_name"]}"
+echo "${settings["app_slug"]}"
+echo "${settings["app_version"]}"
+empty_line
+
 show_app_footer
 empty_line
 
