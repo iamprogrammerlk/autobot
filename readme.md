@@ -10,9 +10,9 @@
 
 <br><br>
 
-# PROJECT_TITLE
+# Autobot
 
-PROJECT_DESCRIPTION
+Bash script toolkit for automating my boring Linux tasks.
 
 > [!TIP]
 >
